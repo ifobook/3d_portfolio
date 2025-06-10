@@ -1,5 +1,5 @@
 import React from 'react'
-import { counterItems } from '../../constants'
+import { counterItems } from '../constants'
 import { div } from 'three/tsl'
 import CountUp from 'react-countup'
 
