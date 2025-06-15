@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,7 +37,7 @@ const AppShowcase = () => {
           delay: 0.3 * (index + 1),
           scrollTrigger: {
             trigger: card,
-            start: "top bottom-=100",
+            start: "top bottom",
           },
         }
       );
@@ -46,8 +47,10 @@ const AppShowcase = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
-        <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
+        <TitleHeader title="My Portfolio" sub='Visit My Portfolio & Keep Your Feedback' />
+
+        <div className="showcaselayout mt-32 relative">
+          <div ref={rydeRef} className="first-project-wrapper card2 p-5">
             <div className="image-wrapper">
               <img src="/images/project1.png" alt="Ryde App Interface" />
             </div>
@@ -63,21 +66,20 @@ const AppShowcase = () => {
             </div>
           </div>
 
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
-              </div>
+          <div className="project-list-wrapper card2 bg-amber-900 flex overflow-hidden">
+            <div className="project " ref={libraryRef}>
+              <img
+                src="/images/project2.png"
+                alt="Library Management Platform"
+              />
+
               <h2>The Library Management Platform</h2>
             </div>
 
-            <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
-              </div>
+            <div className="project card2" ref={ycDirectoryRef}>
+
+              <img src="/images/project3.png" alt="YC Directory App" />
+
               <h2>YC Directory - A Startup Showcase App</h2>
             </div>
           </div>

@@ -7,7 +7,7 @@ const FeatureCards = () => {
     <div className='w-full padding-x-lg '>
         <div className='max-auto grid-3-cols'>
             {abilities.map(({imgPath, title, desc})=>(
-                <div key={title} className='card-border rounded-xl p-8 gap-4 flex flex-col'>
+                <div key={title} className='card-border rounded-xl p-8 gap-4 flex flex-col card2'>
                   <div className='size-14 flex  items-center justify-center rounded-full'>
                     <img src={imgPath} alt={title} />
                   </div>
