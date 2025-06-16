@@ -1,10 +1,11 @@
 import React from 'react'
-import { words } from "../constants/index";
+import { bestSkills, socialImgs, words } from "../constants/index";
 import Button from '../components/Button';
 import HeroExperience from '../components/heroModels/HeroExperience';
-import { useGSAP} from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import AnimatedCounter from '../components/AnimatedCounter';
+import { div } from 'three/tsl';
 
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
             { opacity: 0, y: 50 },
             { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: 'power2.inOut' }
         )
-    }) 
+    })
     return (
         <section id='hero' className='relative overflow-hidden' >
             <div className='absolute top-0 left-0 z-10'>
@@ -24,38 +25,73 @@ const Hero = () => {
                 <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
                     <div className='flex flex-col gap-7'>
                         <div className="hero-text">
+                            <h1 className='font2 font-extrabold'>Hi, I am Franklin </h1>
                             <h1>
-                                Shapping
+
                                 <div className="slide">
-                                    <div className="wrapper">
+                                    <div className="wrapper ">
                                         {words.map((word) => (
                                             <span key={word.text} className='flex items-center md:gap-3 gap-1 pb-2'>
-                                                <img src={word.imgPath} alt={word.text} className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50' />
-                                                <span>{word.text}</span>
+                                                {/* <img src={word.imgPath} alt={word.text} className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50' /> */}
+                                                <span className='bg-gradient-to-tr from-[#17EAD9] to-[#6078EA] bg-clip-text text-transparent font2'>{word.text}</span>
                                             </span>
                                         ))}
                                     </div>
                                 </div>
                             </h1>
 
-                            <h1>into Real Projects</h1>
-                            <h1>that Deliver Results</h1>
+                            <p className='text-lg font2 lg:w-[50%] text-white-50'>I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.</p>
+                            <div className="quick-contact md:flex gap-14">
+                                <div className='social'>
+                                    <h3 className='font2 text-2xl mt-10'>Find me on</h3>
+                                    <div className='flex gap-3'>
+                                        {socialImgs.map(({ url, SocialIcon, name }, index) => (
+                                            <a
+                                                key={index}
+                                                href={url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="card2 relative h-17 w-17 flex items-center justify-center cursor-pointer md:mt-10 mt-5"
+                                                aria-label={name}
+                                            >
+                                                <SocialIcon className="text-2xl text-white size-8" />
+                                            </a>
+                                        ))}
+
+                                    </div>
+                                </div>
+                                <div className="best-skill">
+                                    <h3 className='font2 text-2xl mt-10'>Best Skill</h3>
+
+                                    <div className='flex gap-3'>
+                                        {
+                                            bestSkills.map(({ name, Icon }, index) => (
+                                                <div className='card2 relative h-17 w-17 flex items-center justify-center cursor-pointer md:mt-10 mt-5'>
+                                                    <Icon className="text-2xl text-white  size-8" />
+
+                                                </div>
+                                            ))
+                                        }
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <p>Hi, I’m Akachukwu</p>
-                        
-                        <Button className='md:w-80 md:h-16 w-60 h-12' id='button' text='See my Work' />
+
+                        <Button className='md:w-80 md:h-16 w-60 h-12 font-bold' id='button' text='See my Work' />
                     </div>
                 </header>
                 {/* RIGHT: 3D MODEL */}
 
                 <figure>
                     <div className='hero-3d-layout'>
-                        <HeroExperience/>
+                        <HeroExperience />
                     </div>
                 </figure>
             </div>
-            
-            <AnimatedCounter/>
+
+            <AnimatedCounter />
         </section>
     )
 }

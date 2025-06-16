@@ -3,6 +3,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import TitleHeader from "../components/TitleHeader";
+import { firstProject, OtherProjects } from "../constants";
+import { useState } from "react";
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,7 +14,11 @@ const AppShowcase = () => {
   const sectionRef = useRef(null);
   const rydeRef = useRef(null);
   const libraryRef = useRef(null);
-  const ycDirectoryRef = useRef(null);
+
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4;
+
 
   useGSAP(() => {
     // Animation for the main section
@@ -21,7 +29,7 @@ const AppShowcase = () => {
     );
 
     // Animations for each app showcase
-    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+    const cards = [rydeRef.current, libraryRef.current];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
@@ -44,6 +52,15 @@ const AppShowcase = () => {
     });
   }, []);
 
+
+
+
+
+  const totalPages = Math.ceil(OtherProjects.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedProjects = OtherProjects.slice(startIndex, startIndex + itemsPerPage);
+
+
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
@@ -51,39 +68,81 @@ const AppShowcase = () => {
 
         <div className="showcaselayout mt-32 relative">
           <div ref={rydeRef} className="first-project-wrapper card2 p-5">
-            <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
-            </div>
-            <div className="text-content">
-              <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
-              </h2>
-              <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
-              </p>
-            </div>
+            {firstProject.map(({ imgPath, alt, projectName, github, GithubIcon, UrlIcon, url, desc }, index) => (
+              <div key={index}>
+                <div className="image-wrapper">
+                  <img src={imgPath} alt={alt} />
+                </div>
+                <div className="text-content ">
+                  <div className="flex justify-between">
+                    <h3 className="font2 text-2xl font-bold bg-gradient-to-tr from-[#17EAD9] to-[#6078EA] bg-clip-text text-transparent ">
+                      {projectName}
+                    </h3>
+                    <span className="flex gap-5">
+                      <a href={github} target="_blank"><GithubIcon className="text-white size-7" /></a>
+                      <a href={url} target="_blank"> <UrlIcon className="text-white size-7" /></a>
+                    </span>
+                  </div>
+                  <p className="text-white-50 md:text-xl font2">
+                    {desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+
           </div>
 
-          <div className="project-list-wrapper card2 bg-amber-900 flex overflow-hidden">
-            <div className="project " ref={libraryRef}>
-              <img
-                src="/images/project2.png"
-                alt="Library Management Platform"
-              />
+          <div className="project-list-wrapper" ref={libraryRef}>
+            {paginatedProjects.map(({ imgPath, alt, projectName, github, GithubIcon, UrlIcon, url, desc }, index) => (
+              <div key={index} className="card2 md:w-[45%] p-5">
+                <div className="project">
+                  <img src={imgPath} alt={alt} />
+                  <div className="flex justify-between items-start gap-4">
+                    <h2 className="font2 text-2xl font-bold bg-gradient-to-tr from-[#17EAD9] to-[#6078EA] bg-clip-text text-transparent">
+                      {projectName}
+                    </h2>
+                    <span className="flex gap-4">
+                      <a href={github} target="_blank" rel="noopener noreferrer">
+                        <GithubIcon className="text-white size-7" />
+                      </a>
+                      <a href={url} target="_blank" rel="noopener noreferrer">
+                        <UrlIcon className="text-white size-7" />
+                      </a>
+                    </span>
+                  </div>
+                  <p className="text-white-50 mt-5 font2">{desc}</p>
+                </div>
+              </div>
+            ))}
 
-              <h2>The Library Management Platform</h2>
-            </div>
 
-            <div className="project card2" ref={ycDirectoryRef}>
+            
 
-              <img src="/images/project3.png" alt="YC Directory App" />
-
-              <h2>YC Directory - A Startup Showcase App</h2>
-            </div>
           </div>
+
+          
         </div>
+        <div className="flex justify-center mt-8 gap-4 ">
+              <button
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                disabled={currentPage === 1}
+                className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50 card2 "
+              >
+                Prev
+              </button>
+
+              <span className="text-white text-lg">
+                Page {currentPage} of {totalPages}
+              </span>
+
+              <button
+                onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                disabled={currentPage === totalPages}
+                className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50 card2 "
+              >
+                Next
+              </button>
+            </div>
       </div>
     </div>
   );

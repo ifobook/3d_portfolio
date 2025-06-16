@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -93,7 +95,7 @@ section {
     }
 
     .slide {
-      @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
+      @apply  pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
     }
   }
 
@@ -102,7 +104,7 @@ section {
   }
 
   .hero-3d-layout {
-    @apply xl:w-[60%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+    @apply xl:w-[60%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-[550px] xl:-right-20 right-0;
   }
 
   .navbar {
@@ -122,6 +124,10 @@ section {
 
     .logo {
       @apply text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
+    }
+
+    .gradient-text2{
+      @apply bg-gradient-to-tr from-[#17EAD9] to-[#6078EA] bg-clip-text text-transparent
     }
 
     nav.desktop {
@@ -161,17 +167,17 @@ section {
     @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
 
     .showcaselayout {
-      @apply flex xl:flex-row flex-col gap-10 justify-between;
+      @apply flex xl:flex-row flex-col gap-10 justify-between items-start;
     }
 
     .first-project-wrapper {
-      @apply h-full flex flex-col justify-between xl:w-[50%];
+      @apply h-full flex flex-col justify-between xl:w-[40%];
 
       .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
+        @applyrelative;
 
         img {
-          @apply w-full h-full object-cover rounded-xl absolute inset-0;
+          @apply w-full h-full object-contain rounded-xl absolute inset-0;
         }
       }
 
@@ -189,7 +195,7 @@ section {
     }
 
     .project-list-wrapper {
-      @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[50%];
+      @apply flex w-full object-contain gap-10 xl:w-[60%] flex-wrap;
 
       .image-wrapper {
         @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
@@ -448,6 +454,9 @@ section {
   border-radius: 10px;
 }
 
+.gradient-text{
+  background-image: (35deg, #17EAD9 0%, #6078EA 100%)
+}
 .card::before {
   position: absolute;
   content: "";
@@ -485,4 +494,13 @@ section {
 
 .card:hover::before {
   opacity: 1;
+}
+
+.font2 {
+      font-family: "Edu NSW ACT Hand Pre", cursive;
+
+}
+
+.font3{
+    font-family: 'Michroma', sans-serif;
 }

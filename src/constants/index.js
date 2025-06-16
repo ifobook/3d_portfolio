@@ -1,3 +1,36 @@
+
+import { CiTwitter } from "react-icons/ci";
+import { LuGithub, LuFacebook } from "react-icons/lu";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { FaEye } from "react-icons/fa";
+
+
+import { DiPhotoshop } from "react-icons/di";
+import { FaReact } from "react-icons/fa";
+import { MdOutlinePhp } from "react-icons/md";
+import { RiJavascriptLine } from "react-icons/ri";
+
+
+import { PiPaintBrushBroadDuotone } from "react-icons/pi";
+import { MdOutlineViewQuilt } from "react-icons/md";
+import { FaDatabase } from "react-icons/fa";
+import { GiTeacher } from "react-icons/gi";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const navLinks = [
   {
     name: "Work",
@@ -18,71 +51,53 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "a Frontend Developer", imgPath: "/images/ideas.svg" },
+  { text: "a Backend Developer", imgPath: "/images/concepts.svg" },
+  { text: "an Instructor", imgPath: "/images/designs.svg" },
+ 
  
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
+  { value: 5, suffix: "+", label: "Years of Experience" },
+  { value: 50, suffix: "+", label: "Satisfied Clients" },
+  { value: 70, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/srlogo.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/dominicjade.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/hcbeautycollections.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
+  
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    AbilityIcon: PiPaintBrushBroadDuotone,
+    title: "Graphic Design",
+    desc: "I design creative solutions by blending visual elements, layout structure, and typography to tell clear, effective stories.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    AbilityIcon: MdOutlineViewQuilt,
+    title: "Frontend Devlopment",
+    desc: " build responsive, user-centric interfaces using modern frontend technologies. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React, I translate design concepts into interactive and accessible web experiences that perform seamlessly across devices.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    AbilityIcon: FaDatabase,
+    title: "Backend Devlopment",
+    desc: "I develop and maintain robust server-side applications that power scalable, secure, and high-performance web platforms. With expertise in databases, and server-side logic using technologies like PHP, and MySQL, I ensure seamless data flow, system reliability, and efficient backend architecture.",
+  },
+  {
+    AbilityIcon: GiTeacher,
+    title: "Instructor",
+    desc: "I’m passionate about making difficult concepts easy to grasp. So far, I’ve taught and supported the learning journey of over 15 students.",
   },
 ];
 
@@ -246,26 +261,121 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
+    name: "Linkedin",
     url: "https://www.instagram.com/",
-    imgPath: "/images/insta.png",
+    SocialIcon: SlSocialLinkedin
   },
   {
-    name: "fb",
+    name: "Github",
     url: "https://www.facebook.com/",
-    imgPath: "/images/fb.png",
+    SocialIcon: LuGithub,
   },
   {
     name: "x",
     url: "https://www.x.com/",
-    imgPath: "/images/x.png",
+    SocialIcon: CiTwitter,
   },
   {
-    name: "linkedin",
+    name: "facebook",
     url: "https://www.linkedin.com/",
-    imgPath: "/images/linkedin.png",
+    SocialIcon: LuFacebook,
   },
 ];
+
+const bestSkills = [
+  {
+    name:'',
+    Icon: DiPhotoshop
+
+  },
+  {
+    name: '',
+    Icon: FaReact
+  },
+  {
+    name: '',
+    Icon: MdOutlinePhp
+  },
+  {
+    name: '',
+    Icon: RiJavascriptLine
+  }
+]
+
+const firstProject = [
+  {
+    projectName: 'On-Demand Rides ',
+    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
+    imgPath: '/images/portfolio.png',
+    ait: 'Ryde App Interface',
+    url: 'https://www.facebook.com',
+    UrlIcon: FaEye,
+    GithubIcon: LuGithub,
+    github: 'https://www.youtube.com',
+
+  }
+]
+
+const OtherProjects = [
+  {
+    projectName: 'On-Demand Rides ',
+    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
+    imgPath: '/images/project1.png',
+    ait: 'Ryde App Interface',
+    url: '',
+    UrlIcon: FaEye,
+    GithubIcon: LuGithub,
+    github: '',
+
+  },
+
+  {
+    projectName: 'On-Demand Rides ',
+    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
+    imgPath: '/images/project1.png',
+    ait: 'Ryde App Interface',
+    url: '',
+    UrlIcon: FaEye,
+    GithubIcon: LuGithub,
+    github: '',
+
+  },
+  {
+    projectName: 'On-Demand Rides ',
+    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
+    imgPath: '/images/project1.png',
+    ait: 'Ryde App Interface',
+    url: '',
+    UrlIcon: FaEye,
+    GithubIcon: LuGithub,
+    github: '',
+
+  },
+  {
+    projectName: 'On-Demand Rides ',
+    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
+    imgPath: '/images/project1.png',
+    ait: 'Ryde App Interface',
+    url: '',
+    UrlIcon: FaEye,
+    GithubIcon: LuGithub,
+    github: '',
+
+  },
+  {
+    projectName: 'On-Demand Rides ',
+    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
+    imgPath: '/images/project1.png',
+    ait: 'Ryde App Interface',
+    url: '',
+    UrlIcon: FaEye,
+    GithubIcon: LuGithub,
+    github: '',
+
+  }
+
+]
+
 
 export {
   words,
@@ -279,4 +389,7 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  bestSkills,
+  firstProject,
+  OtherProjects,
 };
