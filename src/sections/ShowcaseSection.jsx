@@ -79,8 +79,8 @@ const AppShowcase = () => {
                       {projectName}
                     </h3>
                     <span className="flex gap-5">
-                      <a href={github} target="_blank"><GithubIcon className="text-white size-7" /></a>
-                      <a href={url} target="_blank"> <UrlIcon className="text-white size-7" /></a>
+                      <a href={github} target="_blank" rel="noopener noreferrer"><GithubIcon className="text-white size-7"  /></a>
+                      <a href={url} target="_blank" rel="noopener noreferrer"> <UrlIcon className="text-white size-7" /></a>
                     </span>
                   </div>
                   <p className="text-white-50 md:text-xl font2">
@@ -101,7 +101,7 @@ const AppShowcase = () => {
                     <h2 className="font2 text-2xl font-bold bg-gradient-to-tr from-[#17EAD9] to-[#6078EA] bg-clip-text text-transparent">
                       {projectName}
                     </h2>
-                    <span className="flex gap-4">
+                    <span className="flex gap-5 mt-5">
                       <a href={github} target="_blank" rel="noopener noreferrer">
                         <GithubIcon className="text-white size-7" />
                       </a>

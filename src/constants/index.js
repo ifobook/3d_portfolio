@@ -16,6 +16,9 @@ import { MdOutlineViewQuilt } from "react-icons/md";
 import { FaDatabase } from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
 
+import { FaRegUser } from "react-icons/fa";
+
+
 
 
 
@@ -160,41 +163,42 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+      "Franklin has brought a blend of creativity and technical expertise to the team, significantly enhancing both our frontend and backend projects. His contributions have been instrumental in delivering faster and more efficient experiences to our customers.",
+    imgPath: "/images/logos/srlogo2.png",
+    logoPath: "/images/scicon.png",
+    title: "Fullstack Developer",
+    date: "January 2020 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed and maintained user-facing features and server-side applications to build scalable, secure, and high-performance web platforms for Script Route.",
+      "Collaborated closely with UI/UX designers to ensure seamless and intuitive user experiences.",
+      "Optimized web applications for maximum speed upto 20%, efficiency, and scalability.",
+      "Assisted in training students in frontend development and onboarding new staff members at the company."
     ],
   },
   {
     review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
+      "Franklin helped us build and maintain our company website (hcbeautycollections.com), where we showcase, sell, and deliver fashion products to customers. He is a developer who pays close attention to company objectives and translates them effectively into code. Franklin is both meticulous and smart in his approach.",
+    imgPath: "/images/logos/hcbeautycollections.png",
+    logoPath: "/images/logos/hcicon.png",
     title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    date: "July 2024 -  Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Built user-centric and intuitive interfaces using HTML, CSS, Bootstrap, and JavaScript, ensuring responsiveness across all devices.",
+      "Worked as a backend developer to implement dynamic functionality and server-side features using php and mysql.",
+      "Ensured the website operates seamlessly and remains up to date.",
     ],
   },
   {
     review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+      "Franklin’s work on Dominicjade website brought a high level of quality and efficiency. He delivered solutions that enhanced our clients experience & meet our product goals.",
+    imgPath: "/images/logos/dominicjade.png",
+    logoPath: "/images/dominicjadeicon.png",
+    title: "Backend Developer",
+    date: "February 2023 - Present",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Built cross-platform applications using native PHP and MySQL, integrated with Dominicjade's frontend services.",
+      "Improved application performance and user experience through code optimization and thorough testing.",
+      "Collaborated with the product team to implement new features based on user and stakeholder feedback.",
     ],
   },
 ];
@@ -216,46 +220,46 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Ude Camillus",
+    mentions: "",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "I can’t say enough good things about Franklin. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+    imgPath: FaRegUser,
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Uzoka Ebuka",
+    mentions: "Uzokagroups.com",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Working with Franklin was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+    imgPath: FaRegUser,
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Akachukwu",
+    mentions: "www.akachukwuu.com",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "Collaborating with Franklin was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Franklin's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Franklin is the ideal partner.",
+    imgPath: FaRegUser,
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Arinze",
+    mentions: "",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "Franklin was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+    imgPath: FaRegUser,
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Ukpai Onu",
+    mentions: "",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+      "Franklin’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+    imgPath: FaRegUser,
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Danial",
+    mentions: "",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "Franklin was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+    imgPath: FaRegUser,
   },
 ];
 
@@ -304,77 +308,108 @@ const bestSkills = [
 
 const firstProject = [
   {
-    projectName: 'On-Demand Rides ',
-    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
+    projectName: 'Portfolio',
+    desc: 'I developed a frontend portfolio site using REACT, GSAP for animation',
     imgPath: '/images/portfolio.png',
-    ait: 'Ryde App Interface',
+    ait: '3d portfolio',
     url: 'https://www.facebook.com',
     UrlIcon: FaEye,
     GithubIcon: LuGithub,
-    github: 'https://www.youtube.com',
+    github: 'https://github.com/ifobook/3d_portfolio',
 
   }
 ]
 
 const OtherProjects = [
   {
-    projectName: 'On-Demand Rides ',
-    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
-    imgPath: '/images/project1.png',
-    ait: 'Ryde App Interface',
-    url: '',
+    projectName: 'Fullstack Todolist App ',
+    desc: 'Fullstack Todo app developed using ReactJS,Tailwindcss, Firebase for server side management, and Context API for global state management',
+    imgPath: '/images/listpage.png',
+    ait: 'Todolist',
+    url: '#!',
     UrlIcon: FaEye,
     GithubIcon: LuGithub,
-    github: '',
+    github: '#!',
 
   },
 
   {
-    projectName: 'On-Demand Rides ',
-    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
-    imgPath: '/images/project1.png',
-    ait: 'Ryde App Interface',
-    url: '',
+    projectName: 'Dominicjade, An Enterprise Services App',
+    desc: "Built cross-platform applications using native PHP and MySQL, integrated with the frontend services.",
+    imgPath: '/images/dominicjadedesktop.png',
+    ait: 'Dominicjade',
+    url: 'https://www.dominicjade.com',
     UrlIcon: FaEye,
     GithubIcon: LuGithub,
-    github: '',
+    github: '#!',
+
+  },
+
+  {
+    projectName: 'Hcbeautycollections, Fullstack Fashion E-commerce',
+    desc: 'I bult a fashion e-commerce application using html, css, bootstrap, javascript, ajax, for frontend and native php for backend and mysql for database management ',
+    imgPath: '/images/hcpage.png',
+    ait: 'hcbeautycollections',
+    url: 'https://www.hcbeautycollections.com',
+    UrlIcon: FaEye,
+    GithubIcon: LuGithub,
+    github: '#!',
 
   },
   {
-    projectName: 'On-Demand Rides ',
-    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
-    imgPath: '/images/project1.png',
-    ait: 'Ryde App Interface',
-    url: '',
+    projectName: 'Frontend Company Site',
+    desc: 'A company website designed with Reactjs and Tailwindcss',
+    imgPath: '/images/srpage.png',
+    ait: 'script Route',
+    url: '#!',
     UrlIcon: FaEye,
     GithubIcon: LuGithub,
-    github: '',
+    github: '#!',
 
   },
   {
-    projectName: 'On-Demand Rides ',
-    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
-    imgPath: '/images/project1.png',
-    ait: 'Ryde App Interface',
-    url: '',
+    projectName: '02travel.ng, Fullstack Travel & Tourism system ',
+    desc: 'I bult a fullstact Travel and Tourism application using html, css, bootstrap, javascript, ajax, for frontend and native php for backend, mysql for database management, Flutterwave API for online payment integration',
+    imgPath: '/images/02page.png',
+    ait: '02travel',
+    url: '#!',
     UrlIcon: FaEye,
     GithubIcon: LuGithub,
-    github: '',
+    github: '#!',
 
   },
   {
-    projectName: 'On-Demand Rides ',
-    desc: 'I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.',
-    imgPath: '/images/project1.png',
-    ait: 'Ryde App Interface',
-    url: '',
+    projectName: 'Uzokagroups, A Frontend site',
+    desc: 'A frontend company site with html, css and javascript',
+    imgPath: '/images/uzokapage.png',
+    ait: 'uzokagroups',
+    url: 'https:www.uzokagroups.com',
     UrlIcon: FaEye,
     GithubIcon: LuGithub,
-    github: '',
+    github: '#!',
 
   }
 
 ]
+
+const frontendSkills = [
+  { skill: 'PHOTOSHOP', percent: 50 },
+  { skill: 'FIGMA', percent: 60 },
+  { skill: 'HTML', percent: 85 },
+  { skill: 'CSS', percent: 80 },
+  { skill: 'TAILWIND CSS', percent: 80 },
+  { skill: 'JAVASCRIPT', percent: 60 },
+  { skill: 'GIT AND GITHUB', percent: 60 },
+  { skill: 'REACT JS', percent: 70 },
+];
+
+const backendSkills = [
+  { skill: 'PHP', percent: 80 },
+  { skill: 'FIREBASE', percent: 50 },
+  { skill: 'MYSQL', percent: 80 },
+  { skill: 'MONGO DB', percent: 20 },
+  { skill: 'POSTMAN', percent: 55 },
+];
 
 
 export {
@@ -392,4 +427,6 @@ export {
   bestSkills,
   firstProject,
   OtherProjects,
+  frontendSkills,
+  backendSkills,
 };

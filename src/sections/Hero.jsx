@@ -41,44 +41,44 @@ const Hero = () => {
                             </h1>
 
                             <p className='text-lg font2 lg:w-[50%] text-white-50'>I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.</p>
-                            <div className="quick-contact md:flex gap-14">
-                                <div className='social'>
-                                    <h3 className='font2 text-2xl mt-10'>Find me on</h3>
-                                    <div className='flex gap-3'>
-                                        {socialImgs.map(({ url, SocialIcon, name }, index) => (
-                                            <a
-                                                key={index}
-                                                href={url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="card2 relative h-17 w-17 flex items-center justify-center cursor-pointer md:mt-10 mt-5"
-                                                aria-label={name}
-                                            >
-                                                <SocialIcon className="text-2xl text-white size-8" />
-                                            </a>
-                                        ))}
 
-                                    </div>
-                                </div>
-                                <div className="best-skill">
-                                    <h3 className='font2 text-2xl mt-10'>Best Skill</h3>
-
-                                    <div className='flex gap-3'>
-                                        {
-                                            bestSkills.map(({ name, Icon }, index) => (
-                                                <div className='card2 relative h-17 w-17 flex items-center justify-center cursor-pointer md:mt-10 mt-5'>
-                                                    <Icon className="text-2xl text-white  size-8" />
-
-                                                </div>
-                                            ))
-                                        }
-
-                                    </div>
+                        </div>
+                        <div className="quick-contact md:flex gap-14 ">
+                            <div className='social'>
+                                <h3 className='font2 text-2xl font-bold mt-10'>Find me on</h3>
+                                <div className='flex gap-3'>
+                                    {socialImgs.map(({ url, SocialIcon, name }, index) => (
+                                        <a
+                                            key={index}
+                                            href={url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="card2 relative h-17 w-17 flex items-center justify-center cursor-pointer md:mt-10 mt-5"
+                                            aria-label={name}
+                                        >
+                                            <SocialIcon className="text-2xl text-white size-8" />
+                                        </a>
+                                    ))}
 
                                 </div>
                             </div>
-                        </div>
+                            <div className="best-skill">
+                                <h3 className='font2 text-2xl mt-10 font-bold'>Best Skill</h3>
 
+                                <div className='flex gap-3'>
+                                    {
+                                        bestSkills.map(({ name, Icon }, index) => (
+                                            <div className='card2 relative h-17 w-17 flex items-center justify-center md:mt-10 mt-5'>
+                                                <Icon className="text-2xl text-white  size-8" />
+
+                                            </div>
+                                        ))
+                                    }
+
+                                </div>
+
+                            </div>
+                        </div>
                         <Button className='md:w-80 md:h-16 w-60 h-12 font-bold' id='button' text='See my Work' />
                     </div>
                 </header>
