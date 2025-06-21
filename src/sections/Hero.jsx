@@ -40,12 +40,12 @@ const Hero = () => {
                                 </div>
                             </h1>
 
-                            <p className='text-lg font2 lg:w-[50%] text-white-50'>I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.</p>
+                            <p className='md:text-[20px] text-[16px] font-medium md:font-bold font2 lg:w-[50%] text-white-50'>I’m a Full Stack Developer with hands-on experience in building dynamic, responsive web applications using HTML, CSS, JavaScript, ReactJS, PHP, MySQL, and Tailwind CSS. I thrive in team settings, leveraging strong problem-solving and communication skills to deliver results within demanding timelines.</p>
 
                         </div>
                         <div className="quick-contact md:flex gap-14 ">
-                            <div className='social'>
-                                <h3 className='font2 text-2xl font-bold mt-10'>Find me on</h3>
+                            <div className='social '>
+                                <h3 className='font2 md:text-[20px] text-[16px] font-medium md:font-bold'>Find me on</h3>
                                 <div className='flex gap-3'>
                                     {socialImgs.map(({ url, SocialIcon, name }, index) => (
                                         <a
@@ -56,20 +56,20 @@ const Hero = () => {
                                             className="card2 relative h-17 w-17 flex items-center justify-center cursor-pointer md:mt-10 mt-5"
                                             aria-label={name}
                                         >
-                                            <SocialIcon className="text-2xl text-white size-8" />
+                                            <SocialIcon className="text-2xl text-white size-6 md:size-8" />
                                         </a>
                                     ))}
 
                                 </div>
                             </div>
-                            <div className="best-skill">
-                                <h3 className='font2 text-2xl mt-10 font-bold'>Best Skill</h3>
+                            <div className="best-skill pt-7 md:pt-0">
+                                <h3 className='font2 text-2xl md:text-[20px] text-[16px] font-medium md:font-bold'>Best Skill</h3>
 
                                 <div className='flex gap-3'>
                                     {
                                         bestSkills.map(({ name, Icon }, index) => (
-                                            <div className='card2 relative h-17 w-17 flex items-center justify-center md:mt-10 mt-5'>
-                                                <Icon className="text-2xl text-white  size-8" />
+                                            <div key={index} className='card2 relative h-17 w-17 flex items-center justify-center md:mt-10 mt-5'>
+                                                <Icon className="text-2xl text-white  size-6 md:size-8" />
 
                                             </div>
                                         ))

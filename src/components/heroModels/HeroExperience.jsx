@@ -4,7 +4,6 @@ import { useMediaQuery } from "react-responsive";
 
 import { Room } from "./Room";
 import HeroLights from "./HeroLights";
-// import Particles from "./Particles";
 import { Suspense } from "react";
 
 const HeroExperience = () => {

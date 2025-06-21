@@ -5,6 +5,7 @@ import TechIcon from '../components/models/techLogos/TechIcon'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import SkillBar from '../components/SkillBar';
+import Divider from '../components/Divider'
 
 
 const TechStack = () => {
@@ -24,35 +25,41 @@ const TechStack = () => {
         )
     }, [])
     return (
-        <div id='skills' className='flex-center section-padding'>
-            <div className="w-full h-full md:px-10 px-5">
-                <TitleHeader title='Professional Skills' sub='5+ Years of Experience' />
+        <div>
+            <Divider />
 
-                <div className="flex flex-col md:flex-row gap-10 justify-between mt-16">
-                    {/* Frontend */}
-                    <div className="w-full md:w-1/2">
-                        <h4 className="text-pink-600 text-sm mb-2 font2 font-bold">2017-Date</h4>
-                        <h2 className="text-3xl font-black mb-5">Frontend Development</h2>
-                        {frontendSkills.map(({ skill, percent }) => (
-                            <div className="tech-card font2">
-                                <SkillBar key={skill} skill={skill} percent={percent} />
-                            </div>
-                        ))}
-                    </div>
+            <div id='skills' className='flex-center w-full  setion-padding xl:px-0'>
+                <div className="w-full h-full md:px-20 px-5">
 
-                    {/* Backend */}
-                    <div className="w-full md:w-1/2">
-                        <h4 className="text-pink-600 text-sm mb-2 font2 font-bold">2017-Date</h4>
-                        <h2 className="text-3xl font-black mb-5">Backend Development</h2>
-                        {backendSkills.map(({ skill, percent }) => (
-                            <div className="tech-card font2">
-                                <SkillBar key={skill} skill={skill} percent={percent} />
-                            </div>
-                        ))}
+                    <TitleHeader title='Professional Skills' sub='5+ Years of Experience' />
+
+                    <div className="flex flex-col md:flex-row gap-10 justify-between mt-16">
+                        {/* Frontend */}
+                        <div className="w-full md:w-1/2">
+                            <h4 className="text-pink-600 text-sm mb-2 font2 font-bold">2019-Date</h4>
+                            <h2 className="text-3xl font-black mb-5">Frontend Development</h2>
+                            {frontendSkills.map(({ skill, percent }, index) => (
+                                <div key={index} className="tech-card font2">
+                                    <SkillBar key={skill} skill={skill} percent={percent} />
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Backend */}
+                        <div className="w-full md:w-1/2">
+                            <h4 className="text-pink-600 text-sm mb-2 font2 font-bold">2019-Date</h4>
+                            <h2 className="text-3xl font-black mb-5">Backend Development</h2>
+                            {backendSkills.map(({ skill, percent }, index) => (
+                                <div key={index} className="tech-card font2">
+                                    <SkillBar key={skill} skill={skill} percent={percent} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
     )
 }
