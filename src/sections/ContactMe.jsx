@@ -114,7 +114,7 @@ const ContactMe = () => {
                                     className="card2 relative h-17 w-17 flex items-center justify-center cursor-pointer md:mt-10 mt-5"
                                     aria-label={name}
                                 >
-                                    <SocialIcon className="text-2xl text-white size-8" />
+                                    <SocialIcon className="text-2xl text-white size-6 md:size-8" />
                                 </a>
                             ))}
 

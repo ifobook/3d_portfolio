@@ -266,22 +266,22 @@ const testimonials = [
 const socialImgs = [
   {
     name: "Linkedin",
-    url: "https://www.instagram.com/",
+    url: "https://github.com/ifobook/",
     SocialIcon: SlSocialLinkedin
   },
   {
     name: "Github",
-    url: "https://www.facebook.com/",
+    url: "https://github.com/ifobook",
     SocialIcon: LuGithub,
   },
   {
     name: "x",
-    url: "https://www.x.com/",
+    url: "https://x.com/ifobook?t=tMkVXgLsjyT4VmaCLmdkeA&s=09",
     SocialIcon: CiTwitter,
   },
   {
     name: "facebook",
-    url: "https://www.linkedin.com/",
+    url: "https://www.facebook.com/share/1EaJDJvg9Y/",
     SocialIcon: LuFacebook,
   },
 ];
