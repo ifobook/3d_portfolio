@@ -266,7 +266,7 @@ const testimonials = [
 const socialImgs = [
   {
     name: "Linkedin",
-    url: "https://github.com/ifobook/",
+    url: "www.linkedin.com/in/franklinio",
     SocialIcon: SlSocialLinkedin
   },
   {
